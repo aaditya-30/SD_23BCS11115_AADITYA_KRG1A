@@ -1,9 +1,3 @@
-Create a github repo:
-    pdf of the experiment
-    A diagram file - HLD
-    LLD- Code files
-
-
 Approach:
     1. Functional Reqirements
     2. Non Functional Requirements
@@ -77,11 +71,4 @@ Tools: POSTman, Draw.io(Free), Excali, LucidCharts
 
 5. HLD
     REFER TO THE DIAGRAM: EXPERIMENT 01.DRAW.IO
-
-
-HOMEWORK: 
-    JWT VS OAUTH - DIFFERENTIATE
-        DEMERITS OF OAUTH?
-    LOW LATENCY AND LOW THROUGHPUT EXAMPLE
-    HIGH LATENCY AND HIGH THROUGHPUT EXAMPLE
     
