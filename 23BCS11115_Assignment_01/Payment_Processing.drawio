@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.7">
+  <diagram name="Page-1" id="krGKkJL_vkS-_RnFaMSR">
+    <mxGraphModel dx="1498" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-99" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Client App&#xa;(Web / Mobile)" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-100" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="API Gateway&#xa;(Auth, Rate limit, Routing)" vertex="1">
+          <mxGeometry height="70" width="180" x="240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-101" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Payment Service&#xa;(Orchestration Layer)" vertex="1">
+          <mxGeometry height="80" width="200" x="470" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;&lt;interface&gt;&gt;&#xa;PaymentGateway" vertex="1">
+          <mxGeometry height="80" width="200" x="740" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Razorpay Gateway&#xa;(implements PaymentGateway)" vertex="1">
+          <mxGeometry height="70" width="240" x="980" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Stripe Gateway&#xa;(implements PaymentGateway)" vertex="1">
+          <mxGeometry height="70" width="240" x="980" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-105" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="PayPal Gateway&#xa;(implements PaymentGateway)" vertex="1">
+          <mxGeometry height="70" width="240" x="980" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-106" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#fff;strokeColor=#000;" value="Payments DB" vertex="1">
+          <mxGeometry height="80" width="200" x="600" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-107" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Fraud Detection Service" vertex="1">
+          <mxGeometry height="70" width="190" x="600" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-108" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Notification Service&#xa;(Email / SMS / Push)" vertex="1">
+          <mxGeometry height="70" width="200" x="600" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-109" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-99" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-110" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-100" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-111" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-101" style="endArrow=block;html=1;dashed=1;" target="s1Kcx7kmA3-r33JibN-a-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-112" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-102" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-113" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-102" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-104">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-114" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-102" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-105">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-115" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-101" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-106">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-116" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-101" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-107">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1Kcx7kmA3-r33JibN-a-117" edge="1" parent="1" source="s1Kcx7kmA3-r33JibN-a-101" style="endArrow=block;html=1;" target="s1Kcx7kmA3-r33JibN-a-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
